@@ -1,1 +1,84 @@
-<div class="block-list"></div>
+<div class="row">
+  <div class="block-list col">
+    <a href="#" class="block-list__wrapper">
+      <div class="block-list__figure">
+        <img src="https://picsum.photos/600/400" alt="sample image">
+      </div>
+      <div class="block-list__headline">
+        <div class="">Article</div>
+        <div class="">01/01/1990</div>
+      </div>
+      <div class="block-list__content">
+        <div class="block-list__title">Lorem ipsum dolor</div>
+        <div class="block-list__text">
+          <p>
+            Lorem ipsum dolor sit amet lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+            Lorem ipsum dolor sit amet...
+          </p>
+        </div>
+      </div>
+      <div class="block-list__footer">
+        <div class="block-list__author">par Machin Truc</div>
+      </div>
+    </a>
+  </div>
+  <div class="block-list col">
+    <a href="#" class="block-list__wrapper">
+      <div class="block-list__figure">
+        <img src="https://picsum.photos/600/400" alt="sample image">
+      </div>
+      <div class="block-list__content">
+        <div class="block-list__title">Lorem ipsum dolor</div>
+        <div class="block-list__text">
+          <p>
+            Lorem ipsum dolor sit amet lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+            Lorem ipsum dolor sit amet...
+          </p>
+        </div>
+      </div>
+      <div class="block-list__footer">
+        <div class="block-list__author">par Machin Truc</div>
+      </div>
+    </a>
+  </div>
+  <div class="block-list col">
+    <a href="#" class="block-list__wrapper">
+      <div class="block-list__headline">
+        <div class="">Article</div>
+        <div class="">01/01/1990</div>
+      </div>
+      <div class="block-list__content">
+        <div class="block-list__title">Lorem ipsum dolor</div>
+        <div class="block-list__text">
+          <p>
+            Lorem ipsum dolor sit amet lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+            Lorem ipsum dolor sit amet...
+          </p>
+        </div>
+      </div>
+      <div class="block-list__footer">
+        <div class="block-list__author">par Machin Truc</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+<constructor component="block-list">
+  <field type="separator" label="Misc"></field>
+  <field type="select" label="presets" target="class" values="content--inline" labels="inline" selected=""></field>
+  <field type="select" label="Image ratio" target="class" values="r_1-1,r_2-1,r_1-2,r_16-9" labels="1:1,2:1,1:2,16:9" selected=""></field>
+  <field type="checkbox" label="Auto size" target="class" value="autoSize" selected="autoSize" helper="set a default size of 33.33% of the container (has to be flex), and a minimum size of 300px"></field>
+  <field type="separator" label="Image alignement"></field>
+  <field type="select" label="vertical" target="class" values="img--top,img--bottom" labels="Top,Bottom" selected="" helper="Align the image only if cropped"></field>
+  <field type="select" label="horizontal" target="class" values="img--left,img--right" labels="Left,Right" selected="" helper="Align the image only if cropped"></field>
+  <field type="separator" label="Image effects on hover"></field>
+  <field type="select" label="zoom" target="class" values="zoomin,zoomout" labels="Zoom in,Zoom out" selected="" helper="Apply a zoom effect on hover. Can be stack with other effects."></field>
+  <field type="select" label="color fade" target="class" values="fadetogrey,fadetocolor" labels="Fade to grey,Fade to color" selected="" helper="Apply a color effect on hover. Can be stack with other effects."></field>
+  <field type="separator" label="Content properties"></field>
+  <field type="select" label="Font color" target="class" values="ft-#colors" labels="#colors" selected="" helper="Set the content's font color"></field>
+  <field type="select" label="Background color" target="class" values="content__bg--#colors" labels="#colors" selected="" helper="Set the content's background color"></field>
+  <field type="checkbox" label="Headline disable" target="class" value="headline--disable" selected=""></field>
+  <field type="checkbox" label="Footer disable" target="class" value="footer--disable" selected=""></field>
+  <field type="checkbox" label="Headline outer" target="class" value="headline--outer" selected=""></field>
+</constructor>

@@ -5,11 +5,14 @@ module.exports = function(app){
     BlockList.lastUpdate     = "2.0.0";
     BlockList.version        = "1";
     // BlockList.factoryExclude = true;
-    // BlockList.loadingMsg     = "This message will display in the console when component will be loaded.";
+    BlockList.loadingMsg     = "[Deprecated]";
     // BlockList.requires       = [];
 
-    // BlockList.prototype.onCreate = function(){
-    // do thing after element's creation
-    // }
+    BlockList.prototype.onCreate = function(){
+        var block = this;
+        if(block.$el.hasClass('content--inline') && !block.$el.find('.block-list__wrapper__inner').length){
+            block.$el.find('.block-list__headline,.block-list__content,.block-list__footer').wrapAll('<div class="block-list__wrapper__inner"></div>')
+        }
+    }
     return BlockList;
 }
